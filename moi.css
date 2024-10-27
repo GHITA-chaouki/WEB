@@ -1,0 +1,166 @@
+header{
+    height: 40vh;
+    background-color: #09024f;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+    list-style: none;
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+#navbar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+#navbar img{
+    height:50px;
+    width: 150px;
+    margin-left: 100px;
+}
+
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+}
+
+
+
+#navbar ul li a{
+    padding: 15px 20px;
+    color:#09024f;
+    font-weight: 600;
+    list-style:none ;
+}
+
+#navbar ul li a:hover{
+    color: #09024f;
+}
+
+header h1{
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 80px;
+    color:white;
+    margin-top: 100px;
+}
+
+
+
+#A-propos-de-moi {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 20px;
+}
+
+#A-propos-de-moi h2{
+    align-items: center;
+    font-size: 80px;
+    color: #09024f;
+}
+
+.about-content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.profile-image {
+    max-width: 30%; 
+    height: auto;
+    margin-right: 110px; 
+}
+
+.about-content p {
+    max-width: 60%; 
+    margin-right: 110px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#Hobbies-et-Objectifs li{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:italic;
+    font-weight: 60em;
+}
+
+#Hobbies-et-Objectifs p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: initial oblique;
+    font-weight: 20em;
+}
+
+#Hobbies-et-Objectifs h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#09024f;
+    font-size: 30px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+section{
+    height: 100vh;
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 80px;
+    color: #09024f;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+table {
+    width: 100%;
+    height: 50%; 
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color:#09024f;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
