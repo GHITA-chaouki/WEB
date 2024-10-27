@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> mon profil</title>
+    <link rel="stylesheet"  href="moi.css">
+    <link rel="icon"  href="icon profil.png">
+    <script>
+        function validateForm() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            if (!name || !email || !message) {
+                alert("Veuillez remplir tous les champs.");
+                return false;
+            }
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Veuillez entrer un email valide.");
+                return false;
+            }
+
+            alert("Formulaire soumis avec succès !");
+            return true;
+        }
+    </script>
+
+
+
+</head>
+    <body>
+        <header>
+            <div id="navbar">
+                <img src="EMSI.png">
+                <nav>
+                    <ul>
+                        <li><a href="#A-propos-de-moi">A propos de moi</a></li>
+                        <li><a href="#Hobbies-et-Objectifs">Hobbies et Objectifs</a></li>
+                        <li><a href="#Tableau-d'Amis">Tableau d'Amis</a></li>
+                        <li><a href="#Formulaire">Formulaire</a></li>
+                    </ul>
+                </nav>
+            </div>
+                <h1> ghita chaouki</h1>
+        </header>
+    
+<main>    
+    <section id="A-propos-de-moi">
+        <h2> a  propos de moi  </h2>
+        <p> Je suis ghita chaouki, étudiante en troisième année en ingénierie informatique et réseaux à l'École Marocaine des Sciences de l'Ingénieur (EMSI). Mon parcours académique m'a permis de développer une expertise solide en programmation, particulièrement en C et C++, ainsi qu'une compréhension approfondie des réseaux informatiques.
+
+            Je possède également des compétences en bases de données, notamment avec MySQL, me permettant de gérer les données de manière efficace. En développement web, mes connaissances en HTML, CSS et JavaScript me donnent la capacité de créer des interfaces dynamiques </p>
+
+        <img src="MOI.jpg" alt="photo " width="100">
+    
+    </section>
+    <section id="Hobbies-et-Objectifs"> 
+        <h2>hobbie et objectif </h2>
+        <h4><u>Hobbies</u></h4>
+        <ul title="mes hobbie" >
+            <li> la lecture  </li>
+            <li>courir </li>
+            <li>le jardinage </li>
+        
+        </ul>
+        <h4><u>Objectifs </u></h4>
+
+        <ol title="mes objectifs " type="1">
+            <li>avoir mon dyplome <P> cela me permetera de passer un cap dans ma vie et de commancer a plus m'integrer dans le monde de travail</P></li>
+            <li>aquerir de nouvelle compétences <p> comme de nouveaux langages de programmation</p></li>
+            <li> trouver un stage </li>
+
+        </ol>
+
+    </section>
+    <section  id="Tableau-d'Amis">
+        <h2>TAB DE MES AMIS</h2>
+        <table style="width: 50%; border-collapse: collapse;">
+            <tr>
+              <th style="border: 1px solid black; ;">Nom</th>
+              <th style="border: 1px solid black; ">Âge</th>
+              <th style="border: 1px solid black; ">Ville</th>
+              <th style="border: 1px solid black; ">LINK</th>
+            </tr>
+            <tr>
+              <td style="border: 1px solid black;">MARIA </td>
+              <td style="border: 1px solid black; ">19</td>
+              <td style="border: 1px solid black; ">CASABLANCA</td>
+              <td  padding: 8px;><a href="https://github.com/Dev-web-Maria/profile_avance.git"> lien </a> </td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid black;">MAHA </td>
+              <td style="border: 1px solid black; ">21</td>
+              <td style="border: 1px solid black; ">CASABLANCA</td>
+              <td style="border: 1px solid black;  "><a href="https://github.com/maha-idr/maha2.git"></a></td>
+            </tr>
+            <tr>
+              <td style="border: 1px solid black;"> zineb </td>
+              <td style="border: 1px solid black; ">20</td>
+              <td style="border: 1px solid black; ">CASABLANCA</td>
+              <td style="border: 1px solid black; "><a href="https://github.com/User-lang-max/ZINEB-S-WEBSITE/upload/main"> lien</a> </td>
+            </tr>
+          </table>
+          
+    </section>
+</head>
+<section id="Formulaire">
+    <h2>Formulaire de Contact</h2>
+    <form onsubmit="return validateForm()">
+        <label for="name">Nom et prenom:</label>
+        <input type="text" id="name" required placeholder="Nom et Prenom">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="Email">
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" required placeholder="message"></textarea>
+        <br>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+ </main>
+</body>
+</html>
